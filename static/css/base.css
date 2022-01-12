@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+/* Tags */
+a:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+span {
+    margin: auto;
+}
+
+ul li a {
+    color: inherit;
+}
+
+/* Classes */
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.logo-font {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    list-style-type: none;
+    height: 4rem;
+}
+.nav-item:hover {
+    opacity: 0.75;
+}
+
+.ui-menu-color-home {
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.ui-menu-color-resume {
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.ui-menu-color-projects {
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.ui-menu-color-contact {
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.vertical-centre {
+    margin: 0;
+    position: inherit;
+    top: 33%;
+    -ms-transform: translateY(-33%);
+    transform: translateY(-33%);
+}
