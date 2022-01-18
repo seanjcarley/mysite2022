@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
 /* Tags */
+a {
+    padding: 2rem;
+}
+
 a:hover {
-    color: gray;
+    color: black;
     text-decoration: none;
 }
 
@@ -29,6 +33,16 @@ ul li a {
     padding: 0;
 }
 
+.hvr-sweep-to-left:before {
+    background: darkgray;
+}
+
+.logo {
+    background: url('../images/Batman.jpg') no-repeat center center;
+    background-size: cover;
+    border-right: solid #191a1f 1rem ;
+}
+
 .logo-font {
     font-size: 3rem;
     text-transform: uppercase;
@@ -42,34 +56,36 @@ ul li a {
 .nav-item {
     list-style-type: none;
     height: 4rem;
-}
-.nav-item:hover {
-    opacity: 0.75;
+    border-right: solid darkgray 20px;
 }
 
 .ui-menu-color-home {
-    background-color: black;
+    background-color: #191a1f;
+    /* background: url('../images/Batman.jpg') no-repeat right center; */
     color: white;
     text-align: center;
     text-decoration: none;
 }
 
 .ui-menu-color-resume {
-    background-color: black;
+    background-color: #181b22;
+    /* background: url('../images/Batman.jpg') no-repeat right bottom; */
     color: white;
     text-align: center;
     text-decoration: none;
 }
 
 .ui-menu-color-projects {
-    background-color: black;
+    background-color: #171b21;
+    /* background: url('../images/Batman.jpg') no-repeat left bottom; */
     color: white;
     text-align: center;
     text-decoration: none;
 }
 
 .ui-menu-color-contact {
-    background-color: black;
+    background-color: #181b22;
+    /* background: url('../images/Batman.jpg') no-repeat right top; */
     color: white;
     text-align: center;
     text-decoration: none;
@@ -82,3 +98,19 @@ ul li a {
     -ms-transform: translateY(-33%);
     transform: translateY(-33%);
 }
+
+/* @media queries  */
+/* x-small (eg: phone) */
+@media (max-width: 600px) {}
+
+/* small (eg: tablet in portrait orientation) */
+@media (min-width: 601px) and (max-width: 767px) {}
+
+/* medium (eg: tablet in landscape orientation) */
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/* large (eg: Laptop/desktop) */
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/* x-large (eg: Large Laptop/desktop) */
+@media (min-width: 1200px) {}
