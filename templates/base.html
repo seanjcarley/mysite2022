@@ -27,7 +27,7 @@
 
         <title>Seán {% block extra_title %}{% endblock %}</title>
     </head>
-    <body>
+    <body class="container">
         <header class="container-fluid">
             <div class="row no-gutters">
                 <a href="#" class="col-md-3 logo"></a>
@@ -78,9 +78,44 @@
             {% block content%}{% endblock %}
         </section>
 
-        <footer>
-            {% block footer %}{% endblock %}
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="col-6 social">
+                    <h5 class="footer-header">Follow me on Social Media:</h5>
+                    <ul class="list-inline social-icons">
+                        <li class="list-inline-item social-item">
+                            <a target="_blank" href="#">
+                                <i class="fa fa-facebook"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item social-item">
+                            <a target="_blank" href="#">
+                                <i class="fa fa-instagram"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item social-item">
+                            <a target="_blank" href="#">
+                                <i class="fa fa-twitter"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item social-item">
+                            <a target="_blank" href="#">
+                                <i class="fa fa-linkedin"></i>
+                                <span class="sr-only">LinkedIn</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 copyright">
+                    &COPY; Seán Carley
+                    <br/> January 2022
+                </div>
+            </div>
         </footer>
+        
         {% if messages %}{% endif %}
         {% block post_load_js %}{% endblock %}
     </body>

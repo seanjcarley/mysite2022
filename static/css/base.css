@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
 /* Tags */
-a {
+/* a {
     padding: 2rem;
-}
+} */
 
 a:hover {
     color: black;
@@ -12,6 +12,11 @@ a:hover {
 
 body {
     font-family: "Roboto", sans-serif;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
 }
 
 html {
@@ -28,24 +33,49 @@ ul li a {
 }
 
 /* Classes */
+.capitalise {
+    text-transform: capitalize;
+}
+
+.center {
+    text-align: center;
+}
+
 .container-fluid {
     margin: 0;
     padding: 0;
 }
 
+.copyright {
+    color: darkgray;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.footer-header {
+    text-align: center;
+    color: darkgray;
+    padding: 0.01em 0;
+}
+
 .hvr-sweep-to-left:before {
-    background: darkgray;
+    background-color: darkgray;
 }
 
 .logo {
     background: url('../images/Batman.jpg') no-repeat center center;
     background-size: cover;
-    border-right: solid #191a1f 1rem ;
+    /* border-right: solid #191a1f 1rem ; */
 }
 
 .logo-font {
     font-size: 3rem;
     text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
 }
 
 .navbar {
@@ -58,6 +88,38 @@ ul li a {
     height: 4rem;
     border-right: solid darkgray 20px;
 }
+
+.social {
+    text-align: center;
+    margin-top: 0.8rem;
+  }
+
+.social-icons li a i{
+    background-color: darkgray;
+    border-radius: 50%;
+    color: white;
+    font-size: 1rem;
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0.01em 0;
+    text-align: center;
+    transition: all 0.35s ease-in-out;
+    width: 2rem;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+  }
+
+.social-icons li a i:hover {
+    background-color: white;
+    color: darkgray;
+  }
+
+.social-item span {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+  }
 
 .ui-menu-color-home {
     background-color: #191a1f;
@@ -91,6 +153,10 @@ ul li a {
     text-decoration: none;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 .vertical-centre {
     margin: 0;
     position: inherit;
@@ -103,7 +169,7 @@ ul li a {
 /* x-small (eg: phone) */
 @media (max-width: 600px) {}
 
-/* small (eg: tablet in portrait orientation) */
+    /* small (eg: tablet in portrait orientation) */
 @media (min-width: 601px) and (max-width: 767px) {}
 
 /* medium (eg: tablet in landscape orientation) */
