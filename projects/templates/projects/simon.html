@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'projects/css/style.css' %}">
+{% endblock %}
+
+{% block page_header %}
+    <div class="row no-gutters">
+        <div class="col-3">
+            <div class="row">
+                <div class="col">
+                    <h3></h3>
+                    <h3>How to Play:</h3>
+                    <ol>
+                        <li>
+                            Start the Game by selecting the Difficulty
+                            Level. Easy, Medium, or Hard.
+                        </li>
+                        <li>
+                            Watch as the the colours pulse, and try to
+                            remember the sequence.
+                        </li>
+                        <li>
+                            When the sequence has complete, click/touch
+                            the colours in the correct sequence.
+                        </li>
+                        <li>
+                            If the sequence is entered correctly, You win.
+                            If not, start again.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row mobile">
+                <div class="col">
+                    <h3>Select your Difficulty level:</h3>
+                </div>
+            </div>
+            <div class="row mobile">
+                <div class="col-md-4">
+                    <button id="easy" class="button">Easy</button>
+                </div>
+                <div class="col-md-4">
+                    <button id="med" class="button">Medium</button>
+                </div>
+                <div class="col-md-4">
+                    <button id="hard" class="button">Hard</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 section-main-section">
+            <div class="row">
+                <div class="col">
+                    <h3 class="uppercase mobile">Simon Says!</h3>
+                    <h3 id="note-mob" class="uppercase desktop">Simon Says!</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col game-area">
+                    <div class="row empty-block mobile"></div>
+                    <div class="row">
+                        <div class="col-md-2 col-sm-2"></div>
+                        <div id="red" class="col-md-3 col-sm-4 red game-block">
+                            <button id="reset-mob" class="button desktop">Reset</button>
+                        </div>
+                        <div class="col-md-2 mobile"></div>
+                        <div id="blue" class="col-md-3 col-sm-4 blue game-block">
+                            <button id="start-mob" class="button desktop">Start</button>
+                        </div>
+                        <div class="col-md-2 col-sm2"></div>
+                    </div>
+                    <div class="row empty-block mobile"></div>
+                    <div class="row mobile">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-2">
+                            <button id="reset" class="button">Reset</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button id="start" class="button">Start</button>
+                        </div>
+                        <div class="col-md-2">
+                            <h4>Level: <span id="level"></span></h4>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                    <div class="row empty-block mobile"></div>
+                    <div class="row">
+                        <div class="col-md-2 col-sm-2"></div>
+                        <div id="yellow" class="col-md-3 col-sm-4 yellow game-block">
+                            <button id="med-mob" class="button desktop">Medium</button>
+                        </div>
+                        <div class="col-md-2 mobile"></div>
+                        <div id="green" class="col-md-3 col-sm-4 green game-block">
+                            <button id="hard-mob" class="button desktop">Hard</button>
+                        </div>
+                        <div class="col-md-2 col-sm-2"></div>
+                    </div>
+                    <div class="row mobile">
+                        <div class="col-md-12"><h4 id="game-outcome"></h4></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block post_load_js %}
+    {{ block.super }}
+    <script src="{% static 'projects/js/simon.js' %}"></script>
+{% endblock %}

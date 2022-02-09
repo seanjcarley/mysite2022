@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
 /* Tags */
-/* a {
-    padding: 2rem;
-} */
-
 a:hover {
     color: black;
     text-decoration: none;
@@ -99,6 +95,10 @@ ul li a:hover {
     border-right: solid darkgray 20px;
 }
 
+.row {
+    margin: 0;
+}
+
 .social {
     text-align: center;
     margin-top: 0.8rem;
@@ -132,7 +132,7 @@ ul li a:hover {
   }
 
 .ui-menu-color-home {
-    background-color: #191a1f;
+    background-color: #181b22;
     /* background: url('../images/Batman.jpg') no-repeat right center; */
     color: white;
     text-align: center;
@@ -180,10 +180,135 @@ ul li a:hover {
 @media (max-width: 600px) {}
 
     /* small (eg: tablet in portrait orientation) */
-@media (min-width: 601px) and (max-width: 767px) {}
+@media (min-width: 601px) and (max-width: 767px) {
+    h4{
+		font-size: 1rem;
+		font-weight: 500;
+	}
+
+	ul {
+		margin: 0;
+	}
+
+	.copyrite {
+		text-align: center;
+		margin-top: 0.5rem;
+		font-weight: 200;
+		font-size: 0.75rem;
+	}
+
+	.desktop {
+		display: block;
+		margin: 50% auto;
+	}
+
+    .desktop-1 {
+		display: block;
+		margin: 0;
+	}
+
+	.footer-text {
+		font-size:0.75;
+		padding: 0.1rem;
+		text-align: center;
+		margin: 0.1rem;
+	}
+
+	.game-area {
+		margin: auto 0;
+        padding: 0;
+	}
+
+	.mobile {
+		display: none;
+	}
+
+	.section-side-section {
+		display: none;
+	}
+
+	.section-main-section {
+		min-height: 60vh;
+	}
+
+	.social {
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	.social-icons li a i {
+		width: 1.5rem;
+		height: 1.5rem;
+		line-height: 1.5rem;
+		font-size: 0.75rem;
+		padding: 0;
+		margin: 0;
+	}
+
+    #start-mob,
+    #reset-mob,
+    #guess-mob,
+    #easy-mob,
+    #med-mob,
+    #hard-mob {
+  	    width:3rem;
+  	    height: 1.5rem;
+  	    text-align: center;
+        font-size: 0.75rem;
+  	    background-color: var(--clr-scm-15);
+  	    color: var(--clr-scm-11);
+  	    border: none;
+    }
+
+    #start-mob:active,
+    #reset-mob:active,
+    #guess-mob:active,
+    #easy-mob:active,
+    #med-mob:active,
+    #hard-mob:active {
+  	    background-color: var(--clr-scm-14);
+  	    color: var(--clr-scm-12);
+  	    border: none;
+    }
+
+    #start-mob:hover,
+    #reset-mob:hover,
+    #guess-mob:hover,
+    #easy-mob:hover,
+    #med-mob:hover,
+    #hard-mob:hover {
+    	font-weight: 600;
+    }
+
+    .target {
+        font-size: 1rem;
+        margin: 0.1rem;
+    }
+
+    .col-1,
+    .col-2 {
+        padding: 0;
+    }
+
+    select {
+        width: 55px;
+        height: 25px;
+    }
+}
 
 /* medium (eg: tablet in landscape orientation) */
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+    .name {
+		padding-left: 1rem;
+		text-align: left;
+	}
+
+	.tag-line {
+		text-align: left;
+		padding-left: 1rem;
+	}
+}
 
 /* large (eg: Laptop/desktop) */
 @media (min-width: 992px) and (max-width: 1199px) {}

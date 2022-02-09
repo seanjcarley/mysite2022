@@ -1,7 +1,30 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block page_header %}{% endblock %}
+{% block page_header %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <h3>My Projects:</h3>
+                <ol>
+                    <li>Astroprints.com</li>
+                    <li>Traffic Management</li>
+                    <li>
+                        Games
+                        <ul>
+                            <li>Simon Says</li>
+                            <li>Mastermind</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <div class="col-9">
+                <h3>My Work</h3>
+                Click on a link in the list on the left to see some of my work.
+            </div>
+        </div>
+    </div>
+{% endblock %}
 
 {% block content %}{% endblock %}
 
