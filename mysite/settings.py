@@ -41,9 +41,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # additional apps
     'django_countries',
+    'crispy_forms',
     # user created apps
     'home',
     'resume',
+    'projects',
 ]
 
 MIDDLEWARE = [
@@ -76,6 +78,8 @@ TEMPLATES = [
         },
     },
 ]
+
+SITE_ID = 1
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
