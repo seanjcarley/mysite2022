@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-3">
+            <h3>Key Skills:</h3>
+            <ul>
+                <li class="">Windows:</li>
+                    <ul>
+                        <li class="">Windows 7, 10</li>
+                        <li class="">Windows Server 2012, 2016</li>
+                        <li class="">Active Directory Administration</li>
+                    </ul>
+                <li class="">Microsoft SQL</li>
+                <li class="">Office 365 Adminstration</li>
+                <li class="">Coding:</li>
+                <ul>
+                    <li class="">Python</li>
+                    <li class="">HTML</li>
+                    <li class="">XML</li>
+                </ul>
+                <li class="">Basic Network Troubleshooting</li>
+                <li class="">Software Support</li>
+                <li class="">Hardware Maintenance</li>
+            </ul>
+        </div>
+        <div class="col-9">
+            {% now "Y" as cur_year %}
+            {% for i in name %}
+            <h3>C.V. of {{ i.first_name }} {{ i.last_name }}</h3>
+            {% endfor %}
+            <h4>Education History:</h4>
+            <ul>
+            {% for i in education %}
+                <li>
+                    <a data-toggle="modal" href="#edu_{{ i.id }}">
+                        {{ i.institute }}: {{ i.course }}
+                    </a>
+                    <ul>
+                        <li>{{ i.start_date|date:"F Y" }} - 
+                            {% if i.end_date|date:"Y" < cur_year %}
+                                {{ i.end_date|date:"F Y" }}
+                            {% else %} 
+                                 Present 
+                            {% endif %}
+                        </li>
+                    </ul>
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="{% url 'resume' %}">Go Back...</a>
+        </div>
+    </div>
+    {% for i in education %}
+        {% include 'resume/includes/resume_modal_edu.html' %}
+    {% endfor %}
+</div>
+{% endblock %}
+
+{% block content %}{% endblock %}

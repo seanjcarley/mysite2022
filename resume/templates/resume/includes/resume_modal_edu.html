@@ -1,0 +1,19 @@
+{% now "Y" as cur_year %}
+<div class="modal fade" id="edu_{{ i.id }}" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">{{ i.course }}</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h5>{{ i.institute }}</h5>
+                <h5 class="date">{{ i.start_date|date:"F Y"}} - {% if i.end_date|date:"Y" < cur_year %}{{ i.end_date|date:"F Y" }}{% else %} Present {% endif %}</h5>
+                {{ i.summary }}
+            </div>
+            <div class="modal-footer">
+                <button type="Button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

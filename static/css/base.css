@@ -17,6 +17,8 @@ body {
 footer {
     text-align: center;
     background-color: black;
+    position: absolute;
+    bottom: 0;
 }
 
 html {
@@ -30,6 +32,10 @@ span {
 
 ul li a {
     color: inherit;
+}
+
+ul li a:hover {
+    color: red;
 }
 
 /* Classes */
@@ -76,6 +82,10 @@ ul li a {
 
 .lowercase {
     text-transform: lowercase;
+}
+
+.modal-title {
+    text-align: center;
 }
 
 .navbar {
