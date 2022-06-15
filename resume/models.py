@@ -1,10 +1,5 @@
-import imp
-from math import fabs
-from tabnanny import verbose
-from turtle import position
 from django.db import models
 from django.contrib.auth.models import User
-from django_countries.fields import CountryField
 
 # Create your models here.
 class Education(models.Model):
