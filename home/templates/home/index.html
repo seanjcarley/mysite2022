@@ -9,21 +9,18 @@
                 <ul>
                     {% for i in name %}
                     <li class="">Name: {{ i.first_name }} {{ i.last_name }}</li>
-                    <li class="">Location: Dublin, Ireland</li>
+                    <li class="">Location: </li>
                     <li class=""><a href="#" class="">Contact Me</a></li>
                     {% endfor %}
                 </ul>
             </div>
             <div class="col-9">
                 <h3>About Me:</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Error ea soluta, omnis cumque mollitia enim unde adipisci, 
-                    amet odio maiores accusantium! Suscipit, dolores? 
-                    Sunt ullam voluptate ipsa eius nemo optio. Lorem ipsum dolor, 
-                    sit amet consectetur adipisicing elit. 
-                    Repudiandae, ipsam rerum! Iure, quisquam architecto! 
-                    Dicta cum ipsum quia facilis aliquid esse sequi vitae nobis fugit tempora, 
-                    soluta praesentium dolore aliquam!</p>
+                <p>
+                {% for j in summary %}
+                    {{ j.summary }}
+                {% endfor %}
+                </p>
             </div>
         </div>
     </div>

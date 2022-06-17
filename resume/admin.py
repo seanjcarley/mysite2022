@@ -21,7 +21,6 @@ class EducationAdmin(admin.ModelAdmin):
     ordering = ('-start_date',)
 
 
-
 class EmploymentAdmin(admin.ModelAdmin):
     ''' make the employment model visible in the admin page '''
 
@@ -43,7 +42,7 @@ class EmploymentAdmin(admin.ModelAdmin):
 class ExecutiveSummaryAdmin(admin.ModelAdmin):
     ''' make the Executive Summary table visible on the admin page '''
 
-    list_display =(
+    list_display = (
         'id',
         'summary',
         'user_id',

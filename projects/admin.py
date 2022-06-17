@@ -12,8 +12,8 @@ class ProjectAdmin(admin.ModelAdmin):
         'proj_description',
         'proj_link',
         'user_id',
+        'date_added',
+        'last_updated',
     )
-
-    # ordering = ('id',)
 
 admin.site.register(Project, ProjectAdmin)

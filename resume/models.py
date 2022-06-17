@@ -53,7 +53,7 @@ class ExecSummary(models.Model):
 
     class Meta:
         ''' change the table name in admin page '''
-        verbose_name_plural = 'Executive Summary'
+        verbose_name_plural = 'Executive_Summary'
 
     summary = models.TextField(null=False, blank=False, default='')
     user_id = models.ForeignKey(User, to_field='id', on_delete=models.CASCADE)
